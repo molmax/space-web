@@ -1,0 +1,91 @@
+.backgrnd {
+	background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+	width: 100%;
+	border-radius: 5px;
+	background-color: #000;
+}
+
+.menu {
+	width: 15%;    
+	position: relative;
+	float: left;
+	background-color: black;	
+	color: black;
+	padding-left: 0; 
+    height: 100%;
+}
+
+.menuListing {
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+.content {
+	width: 85%;
+	position: relative;
+	float:right;
+	background-color: #fff;
+	text-indent: 1em;
+	padding-top: 1em;
+    height: 100%;
+}
+
+.textFilling {
+	text-align: left;
+	padding: 0.5em 1em 1em 0.5em;
+}
+
+.footer {
+	position: relative;
+    bottom: 0;
+    background-color: black;
+	width: 100%;
+	height: 7em;
+	clear: both;
+	//margin-top: 2em;
+
+}
+
+.milkyFacts {
+    font-weight: bold; /*p Milky Way*/
+}
+
+#milkyFactsHeader {
+    text-align: center; /*h4 Milky Way*/
+    font-weight: bold;
+}
+
+#foot-word {
+	padding-left: 1em;
+	padding-top: 1em;
+	color: white;
+}
+
+#bottom-li {
+	padding-bottom: 2em;
+}
+
+#top-li {
+	padding-top: 2em;
+}
+
+#contentIMG {
+	border: 2px;
+	position: relative;
+	float: right;
+	height: 300px;
+	width: 300px;
+	padding: 0 1em 1em 1em;
+    margin-right: 1em;
+}
+
+#ObjectName {
+		text-align: center;
+		padding: 0 0 1em 1em;
+}
+

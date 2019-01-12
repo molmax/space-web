@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Don't Panic!</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="styles/main.css" rel="stylesheet">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+            <script type="text/javascript">
+
+                $(document).ready(function(){
+
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() 
+                { 
+                 $('#slideshow > div:first')
+                .fadeOut(3000)
+                .next()
+                .fadeIn(3000)
+                .end()
+                .appendTo('#slideshow');
+                }, 5000);
+
+                });
+
+            </script>
+	</head>
+ <body>   
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="Index.html">FinalFrontier</a>
+			</div>						 
+			
+				<ul class= "nav navbar-nav">
+					<li class="active"><a href="Index.html">Home</a></li>
+					<li><a href="pages/mainPages/StarsPlanetsOverview.html">Stars and Planets</a></li>
+					<li><a href="pages/mainPages/GalaxiesOverview.html">Galaxies</a></li>
+					<li><a href="pages/mainPages/TopicsOverview.html">Topics</a></li>
+					<li><a href="pages/mainPages/GamesMoviesOverview.html">Games and Movies</a></li>
+				</ul>
+				<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+			</div>
+	</nav>	
+	<div class="container">
+    <div id="mainImgContainer">
+	<div id="slideshow">
+        <div>								
+		<img class="mainIMG" src="images/mainFrame/purple-nebula.jpg" alt="slideShow" />
+        </div>
+        <div>								
+		<img class="mainIMG" src="images/mainFrame/deepSpace.jpg" alt="slideShow" />
+        </div>
+        <div>								
+		<img class="mainIMG" src="images/mainFrame/red.jpg" alt="slideShow" />
+        </div>
+        <div>								
+		<img class="mainIMG" src="images/mainFrame/spaceAtmosphere.jpg" alt="slideShow" />
+        </div>
+	</div>
+	</div>
+	</div>
+	<div class="welcome-word">		 
+		<div class="container">
+        <p id="universeExplain">The Universe is all of time and space and its contents. The Universe includes planets, stars, galaxies, the contents of intergalactic space, the smallest subatomic particles, and all matter and energy. The observable universe is about 28 billion parsecs in diameter at the present time. </br> The size of the whole Universe is not known...</p>
+        </div>
+	</div>	
+	<div class="thumbnails">	
+		<div class="container">
+			 <div class="row">
+				<div class="col-md-3"><a href="pages/mainPages/StarsPlanetsOverview.html"><h4 class="topics">Stars and Planets</h4><img class="img-thumbnail" src="images/thumbnails/starsPlanets.jpg" alt="stars&planets"></img></a></div>
+				<div class="col-md-3"><a href="pages/mainPages/GalaxiesOverview.html"><h4 class="topics">Galaxies</h4><img class="img-thumbnail" src="images/thumbnails/galax.jpg" alt="galaxies"></img></a></div>
+				<div class="col-md-3"><a href="pages/mainPages/TopicsOverview.html"><h4 class="topics">Topics</h4><img class="img-thumbnail" src="images/thumbnails/rocketbig.jpg" alt="topics"></img></a></div>
+				<div class="col-md-3"><a href="pages/mainPages/GamesMoviesOverview.html"><h4 class="topics">Games and Movies</h4><img class="img-thumbnail" src="images/thumbnails//starwars.png" alt="games&movies"></img></a></div>
+			</div>
+		</div>
+	</div>	
+	<div class="footer">			
+		<p id="foot-word">MoloMax &copy 2015</p>
+	</div>
+
+ </body>
+</html> 
